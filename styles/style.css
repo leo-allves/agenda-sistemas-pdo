@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{   
+    --primary: rgb(57, 57, 57);
+    --secundary: rgb(28, 100, 145);
+    --tertiary: white;
+}
+
+div.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    background: var(--primary);
+    color: var(--tertiary);
+    width: 700px;
+    min-height: 400px;
+    border-radius: 10px;
+}
+label{
+    padding-bottom: 10px;
+}
+div.title-form{
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+i.icon-agenda{
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+button{
+    float: right;
+}
