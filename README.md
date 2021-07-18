@@ -3,11 +3,12 @@
 *Agenda de Contatos de Sistemas**
 
 - Projeto criado com Bootstrap e PHP puro inicialmente, banco MySQL
-- Objetivo criar contato com sigla do sistema, nome do sistema, responsável, telefone, email e cadastrar no BD
-- E um programinha simples que facilita em uma organização na hora de saber qual o nome do sistema e o seu responsável
+- E um sistema de agendas onde podemos cadastrar sistemas e dados do responsavel, 
+- A ideia para surgir para facilitar uma organizações que costumam gerenciar varios sistemas, tendo em mãos os dados de cada um e quem acionar caso necessario.
 
-## Version 2
+## OBS
 
-- O código foi totalmente refatorado e passado para PDO
+- Programa criado em PHP com PDO
+- Banco de Dados MySQL
 - Foi criado diversas validações de Erro
   
