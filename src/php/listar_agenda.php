@@ -19,7 +19,6 @@ if($sql->rowCount() > 0){
 ?>
 
 
-
 <!-- CSS bootstrap -->
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
 <!-- css -->

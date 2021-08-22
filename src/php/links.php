@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    
     <!-- font awesome icons -->
     <script src="https://kit.fontawesome.com/0d36460cd3.js" crossorigin="anonymous"></script>
     <title>Agenda Ambev</title>
