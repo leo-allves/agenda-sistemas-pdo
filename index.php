@@ -2,11 +2,12 @@
     include './src/php/links.php'
 ?>
 
-<body>
-    <div class="container" style="background-color:rgb(57, 57, 57); color:white; padding:5px 20px 60px 20px;margin-top:20px; width:700px; border-radius:10px;">
+<body class="bg-dark">
+    <div class="container" style="background-color:#3c3b3b; color:white; padding:10px 20px 60px 20px;margin-top:30px; width:700px; border-radius:10px;"> 	
+    <!--bg #363636 #4F4F4F #292929-->
         <div class="title-form">
             <i class="far fa-id-card icon-agenda"></i>
-            <h1>Agenda De Sistemas</h1>  
+            <h1 class="text-info">Agenda De Sistemas</h1>  
         </div>
         <form id="form" action="./src/php/insert.php" method="post">
 
@@ -40,7 +41,7 @@
             </div>
 
 
-            <button type="submit" class="btn btn-success" style="padding-right: 25px;padding-left: 25px;">
+            <button type="submit" class="btn btn-light" style="padding-right: 25px;padding-left: 25px;">
                 <i class="far fa-thumbs-up"></i>&nbsp;Salvar
             </button>
 

@@ -30,8 +30,8 @@
 
 ?>
 
-<body>
-    <div class="container" style="background-color:rgb(57, 57, 57); color:white; padding:5px 20px 20px 20px;margin-top:100px; width:700px; border-radius:10px;">
+<body class="bg-dark">
+    <div class="container" style="background-color:#3c3b3b; color:white; padding:5px 20px 20px 20px;margin-top:100px; width:700px; border-radius:10px;">
         <div class="title-form pt-4">
             <!-- <i class="far fa-id-card icon-agenda"></i> -->
             <h1>Editar Agenda De Sistemas</h1>
@@ -64,7 +64,7 @@
                     <i class="far fa-thumbs-up"></i>&nbsp;Editar
                 </button>
                 
-                <a href="/src/php/listar_agenda.php" style="margin-right: 5px;" class="btn btn-danger">
+                <a href="listar_agenda.php" style="margin-right: 5px;" class="btn btn-danger">
                 <i class="fas fa-trash"></i>&nbsp;Cancelar
                 </a>
         </form>

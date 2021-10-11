@@ -26,10 +26,10 @@ if($sql->rowCount() > 0){
 <link rel="stylesheet" href="/styles/modal_corfimation.css">
 <!-- font awesome icons -->
 <script src="https://kit.fontawesome.com/0d36460cd3.js" crossorigin="anonymous"></script>
-<body>
+<body class="bg-dark">
     <div class="container-content" style="margin-top:40px;font-size:14px; width:100%; padding:10px;">
 
-        <div class="title-table">
+        <div class="title-table text-info">
             <h3>Lista de Contatos</h3>
             <a href="../../index.php" role="button" class="btn btn-secondary mb-2">Cadastrar Novo</a>
         </div>

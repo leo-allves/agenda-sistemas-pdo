@@ -8,7 +8,6 @@ $responsavel_sistema = filter_input(INPUT_POST, 'responsavel_sistema');
 $telefone = filter_input(INPUT_POST, 'telefone');
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 
-
 //VERIFICAÇÃO SE OS CAMPOS ESTIVER OK INSERI SE NÃO RETURN A CADASTRO
 if($sigla_sistema && $nome_sistema && $responsavel_sistema && $telefone && $email){
     # verificando se já existe e-mail igual ao inserido
@@ -16,8 +15,6 @@ if($sigla_sistema && $nome_sistema && $responsavel_sistema && $telefone && $emai
     $sql = $conexao->prepare("SELECT * FROM agendas WHERE email = :email");
     $sql->bindValue(':email', $email);
     $sql->execute();
-
-    
 
     #VERIFICANDO SE VIERAM ALGUM E_MAIL IGUAL da consulta anterior
     //$sql->rowCount() -quantos registros vieram dessa consulta
@@ -41,8 +38,6 @@ if($sigla_sistema && $nome_sistema && $responsavel_sistema && $telefone && $emai
         #EXECUTANDO A QUERY
         $sql->execute();
 
-        
-    
         #APÓS RETORNAR listar_agenda.php 
         // header('location: listar_agenda.php');
         // exit;
