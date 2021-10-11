@@ -13,7 +13,6 @@ $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 
 //VERIFICAÇÃO SE OS CAMPOS ESTIVER OK ATUALIZAR SE NÃO RETURN A listar_agenda.php
 if($id && $sigla_sistema && $nome_sistema && $responsavel_sistema && $telefone && $email){
-    
     #UPDATE
     //montando a QUERY
     $sql = $conexao->prepare("UPDATE agendas SET
@@ -21,7 +20,6 @@ if($id && $sigla_sistema && $nome_sistema && $responsavel_sistema && $telefone &
     telefone =:telefone, email = :email 
     WHERE id =  :id");
     
-
     #INSERINDO DADOS
     //bindValue associa 1ºparam c/ 2ºparam
     $sql->bindValue(':id', $id);
@@ -37,7 +35,6 @@ if($id && $sigla_sistema && $nome_sistema && $responsavel_sistema && $telefone &
     #APÓS RETORNAR listar_agenda.php 
     // header('location: listar_agenda.php');
     // exit;
-
     echo "
         <!-------------------- CRIANDO MODAL DE CONFIRMAÇÃO DE ATUALIAZAÇÃO ------------------------->
         <!-- CSS bootstrap -->
@@ -61,11 +58,9 @@ if($id && $sigla_sistema && $nome_sistema && $responsavel_sistema && $telefone &
                 </center>
             </div>
         </div>
-
     ";
     exit;
     
-
 } else{
     echo "
         <!-------------------- CRIANDO MODAL DE CONFIRMAÇÃO DE ATUALIAZAÇÃO ------------------------->

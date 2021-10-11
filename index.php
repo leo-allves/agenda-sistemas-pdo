@@ -3,13 +3,10 @@
 ?>
 
 <body>
-    <div class="container">
+    <div class="container" style="background-color:rgb(57, 57, 57); color:white; padding:5px 20px 60px 20px;margin-top:20px; width:700px; border-radius:10px;">
         <div class="title-form">
-
             <i class="far fa-id-card icon-agenda"></i>
-
-            <h1>Agenda De Sistemas</h1>
-            
+            <h1>Agenda De Sistemas</h1>  
         </div>
         <form id="form" action="./src/php/insert.php" method="post">
 
