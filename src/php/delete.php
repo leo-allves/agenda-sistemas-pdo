@@ -1,5 +1,6 @@
 <?php
 require './conexao.php';
+require 'links.php';
 
 #PEGANDO O ID
 $id = filter_input(INPUT_GET, 'id');
@@ -19,7 +20,11 @@ if($id){ //se tiver dados
         <link rel='stylesheet' href='/styles/modal_corfimation.css'>
         
         <div class='container' style='margin-top:220px;'>
-            <h4>Contato Deletado Sucesso!</h4>
+            <div class='modal-body'>
+                <center>
+                    <h4>Contato Deletado Sucesso!</h4>
+                </center>
+            </div>
             <div class='modal-body'>
                 <center>
                     <a href='listar_agenda.php' role='button' class='btn btn-sm btn-success'>Voltar</a>
@@ -39,6 +44,11 @@ if($id){ //se tiver dados
         
         <div class='container' style='margin-top:220px;'>
             <h4>Erro! Contato não foi Deletado!</h4>
+            <div class='modal-body'>
+                <center>
+                    <h4>Erro! Contato não foi Deletado!</h4>
+                </center>
+            </div>
             <div class='modal-body'>
                 <center>
                     <a href='listar_agenda.php' role='button' class='btn btn-sm btn-danger'>Tentar novamente!</a>

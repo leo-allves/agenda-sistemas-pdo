@@ -1,5 +1,6 @@
 <?php
 require './conexao.php';
+require 'links.php';
 
 //UPDATE
 $id = filter_input(INPUT_POST, 'id');
@@ -48,10 +49,15 @@ if($id && $sigla_sistema && $nome_sistema && $responsavel_sistema && $telefone &
         <link rel='stylesheet' href='/styles/modal_corfimation.css'>
 
         <div style='margin-top: 15%;' class='container'>
-            <h4>Contato Atualizado com Sucesso!</h4>
+            
             <div class='modal-body'>
                 <center>
-                    <a href='/src/php/listar_agenda.php' role='button' class='btn btn-sm btn-success'>Voltar</a>
+                    <h4>Contato Atualizado com Sucesso!</h4>
+                </center>
+            </div>
+            <div class='modal-body'>
+                <center>
+                    <a href='listar_agenda.php' role='button' class='btn btn-sm btn-success'>Voltar</a>
                 </center>
             </div>
         </div>
@@ -72,7 +78,11 @@ if($id && $sigla_sistema && $nome_sistema && $responsavel_sistema && $telefone &
         <link rel='stylesheet' href='/styles/modal_corfimation.css'>
 
         <div style='margin-top: 15%;' class='container'>
-            <h4>Erro! Por favor preencha os campos corretamente</h4>
+            <div class='modal-body'>
+                <center>
+                    <h4>Erro! Por favor preencha os campos corretamente</h4>
+                </center>
+            </div>
             <div class='modal-body'>
                 <center>
                     <a href='/src/php/listar_agenda.php' role='button' class='btn btn-sm btn-danger'>Retornar</a>

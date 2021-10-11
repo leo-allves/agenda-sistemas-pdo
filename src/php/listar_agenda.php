@@ -3,6 +3,7 @@
 
 # incluindo a conexao
 require './conexao.php';
+require 'links.php';
 # criando array
 $lista = [];
 
@@ -30,7 +31,7 @@ if($sql->rowCount() > 0){
 
         <div class="title-table">
             <h3>Lista de Contatos</h3>
-            <a href="/index.php" role="button" class="btn btn-secondary">Cadastrar Novo</a>
+            <a href="../../index.php" role="button" class="btn btn-secondary mb-2">Cadastrar Novo</a>
         </div>
 
         <table class="table table-hover table-dark">

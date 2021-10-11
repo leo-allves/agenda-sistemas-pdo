@@ -1,5 +1,6 @@
 <?php 
     require './conexao.php';
+    require 'links.php';
 
     $info = []; //recebera inform. do usuario
 
@@ -28,23 +29,17 @@
     }
 
 ?>
-<!-- CSS bootstrap -->
-<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
-<!-- css -->
-<link rel="stylesheet" href="/styles/style.css">
-<!-- font awesome icons -->
-<script src="https://kit.fontawesome.com/0d36460cd3.js" crossorigin="anonymous"></script>
 
 <body>
-    <div class="container">
-        <div class="title-form">
-            <i class="far fa-id-card icon-agenda"></i>
+    <div class="container" style="background-color:rgb(57, 57, 57); color:white; padding:5px 20px 20px 20px;margin-top:100px; width:700px; border-radius:10px;">
+        <div class="title-form pt-4">
+            <!-- <i class="far fa-id-card icon-agenda"></i> -->
             <h1>Editar Agenda De Sistemas</h1>
         </div>
-        <form action="./update.php" method="POST">
+        <form id="form" action="./update.php" method="POST">
             
                 <div class="mb-3">
-                    <label>Sigla Sistema:</label>
+                    <label class="form-label">Sigla Sistema:</label>
                     <input type="text" class="form-control" name="sigla_sistema" value="<?=$info['sigla_sistema'] ?>">
                     <input type="hidden" class="form-control" name="id" value="<?=$info['id'] ?>">
                 </div>

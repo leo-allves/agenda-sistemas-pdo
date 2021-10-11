@@ -56,9 +56,11 @@ if($sigla_sistema && $nome_sistema && $responsavel_sistema && $telefone && $emai
 
             <link rel='stylesheet' href='/styles/modal_corfimation.css'>
 
-            <div style='margin-top: 15%;' class='container'>
-                <h4>Contato Adicionado com Sucesso!</h4>
+            <div style='margin-top: 15%;' class='container'> 
                 <div class='modal-body'>
+                    <center>
+                        <h4>Contato Adicionado com Sucesso!</h4>
+                    </center>
                     <center>
                         <a href='/src/php/listar_agenda.php' role='button' class='btn btn-sm btn-success'>Voltar</a>
                     </center>
